@@ -91,10 +91,18 @@
 
 
 
-x = list(map(int,input('enter numbers: ').split()))
+# x = list(map(int,input('enter numbers: ').split()))
 
-def find_minimum(x):
-    ans = min(x)
-    return ans
+# def find_minimum(x):
+#     ans = min(x)
+#     return ans
 
-print(find_mainimum(x))
+# print(find_minimum(x))
+
+
+
+def outer_func():
+    def inner_func():
+        print("hello, world")
+    inner_func()
+outer_func()
